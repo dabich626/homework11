@@ -1,7 +1,6 @@
 
 public abstract class Main {
    public static void calculateWhatYear(int year) {
-       year = 1999;
        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
            System.out.println("год високосный");
        } else {
@@ -9,9 +8,7 @@ public abstract class Main {
        }
    }
 
-   public static void chooseSystemForPhone (){
-       int phoneCreateYear = 2015;
-       int phoneSysType = 1;
+   public static void chooseSystemForPhone (int phoneSysType, int phoneCreateYear){
        int currentYear = 2023;
        int systemIosType = 0;
        int systemAndroidType = 1;
@@ -27,8 +24,8 @@ public abstract class Main {
        }
 
    }
-   public static int calculateDeliveryTime(){
-       int km = 35;
+   public static int calculateDeliveryTime(int km){
+       km = 35;
        int deliveryDays = 0;
       if (km<=20){
           deliveryDays = deliveryDays + 1;
@@ -46,6 +43,9 @@ public abstract class Main {
    }
 
     public static void main(String[] args) {
+       calculateWhatYear(1999);
+       calculateDeliveryTime(45);
+       chooseSystemForPhone(1,2010);
 
 
     }
