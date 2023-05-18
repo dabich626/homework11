@@ -25,7 +25,6 @@ public abstract class Main {
 
    }
    public static int calculateDeliveryTime(int km){
-       km = 35;
        int deliveryDays = 0;
       if (km<=20){
           deliveryDays = deliveryDays + 1;
@@ -43,7 +42,7 @@ public abstract class Main {
    }
 
     public static void main(String[] args) {
-       calculateWhatYear(1999);
+       calculateWhatYear(2023);
        calculateDeliveryTime(45);
        chooseSystemForPhone(1,2010);
 
